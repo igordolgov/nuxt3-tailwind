@@ -1,13 +1,31 @@
 {
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxi dev",
+    "build": "nuxi build",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "nuxt": "^3.3.1"
+    "@tailwindcss/typography": "0.5.8",
+    "@volar/vue-language-plugin-pug": "^1.2.0",
+    "autoprefixer": "10.4.13",
+    "nuxt": "3.0.0-rc.12",
+    "postcss": "8.4.19",
+    "tailwindcss": "3.2.4"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "0.4.3",
+    "highlight.js": "11.6.0",
+    "markdown-it": "13.0.1",
+    "markdown-it-container": "3.0.0",
+    "markdown-it-deflist": "2.1.0",
+    "markdown-it-emoji": "2.0.2",
+    "markdown-it-footnote": "3.0.3",
+    "markdown-it-ins": "3.0.1",
+    "markdown-it-sub": "1.0.0",
+    "markdown-it-sup": "1.0.0",
+    "vite-plugin-pug": "^0.3.2"
   }
 }

@@ -1,5 +1,6 @@
-<template>
-  <div>
-    <NuxtWelcome />
-  </div>
+<template lang="pug">
+NuxtLayout
 </template>
+
+<script>
+</script>
