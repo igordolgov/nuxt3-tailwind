@@ -1,6 +1,13 @@
 <template lang="pug">
-button(type="button" @click='backTop' class="hover:bg-sky-600 active:text-white").back-top.hidden.fixed.bottom-14.right-4.z-2.cursor-pointer.bg-sky-700.text-sky-200.px-2.py-1.mt-1.rounded-md.
-  Вверх
+.back-top.hidden.fixed.bottom-20.right-10.right-10.z-2.cursor-pointer(@click='backTop')
+  svg(viewBox='0 0 55 55', fill='black', xmlns='http://www.w3.org/2000/svg')
+    circle(cx='27.5', cy='27.5', r='24', fill='none', stroke='black')
+    path(
+      fill-rule='evenodd',
+      clip-rule='evenodd',
+      d='M33.9667 25.8088C33.5891 26.1865 32.9767 26.1865 32.599 25.8088L29.0921 22.3019V38.0197C29.0921 38.5538 28.6591 38.9868 28.125 38.9868C27.5909 38.9868 27.1579 38.5538 27.1579 38.0197V22.3019L23.651 25.8088C23.2733 26.1865 22.6609 26.1865 22.2833 25.8088C21.9056 25.4311 21.9056 24.8188 22.2833 24.4411L27.4412 19.2832C27.8188 18.9056 28.4312 18.9056 28.8088 19.2832L33.9667 24.4411C34.3444 24.8188 34.3444 25.4311 33.9667 25.8088Z',
+      fill='black'
+    )
 </template>
 
 <script>
@@ -33,5 +40,9 @@ export default {
 <style scoped>
 .back-top.active {
   display: block;
+}
+svg {
+  width: 60px;
+  height: 60px;
 }
 </style>
