@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "0.5.8",
-    "@volar/vue-language-plugin-pug": "^1.2.0",
+    "@volar/vue-language-plugin-pug": "latest",
     "autoprefixer": "10.4.13",
     "nuxt": "3.0.0-rc.12",
     "postcss": "8.4.19",
@@ -17,7 +17,9 @@
   },
   "dependencies": {
     "@pinia/nuxt": "0.4.3",
+    "color": "^4.2.3",
     "highlight.js": "11.6.0",
+    "lodash": "^4.17.21",
     "markdown-it": "13.0.1",
     "markdown-it-container": "3.0.0",
     "markdown-it-deflist": "2.1.0",
@@ -26,6 +28,8 @@
     "markdown-it-ins": "3.0.1",
     "markdown-it-sub": "1.0.0",
     "markdown-it-sup": "1.0.0",
+    "semistandard": "^16.0.1",
+    "tailwindcss-ripple": "^0.7.1",
     "vite-plugin-pug": "^0.3.2"
   }
 }

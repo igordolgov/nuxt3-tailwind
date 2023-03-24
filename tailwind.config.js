@@ -7,6 +7,8 @@ module.exports = {
   ],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
+	ripple: theme => ({
+        colors: theme('colors')}),
     screens: {
       'xsm': '480px',
       'sm': '640px',
@@ -83,5 +85,6 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/typography'),
+    require('tailwindcss-ripple')()
   ],
 }
