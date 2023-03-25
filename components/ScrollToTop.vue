@@ -12,38 +12,38 @@
 
 
 <script>
-export default {
-  name: 'back-top',
-  data () {
-    return {
-      isActive: false
-    }
-  },
-  methods: {
-    backTop () {
-      window.scrollTo({ top: 0, behavior: 'smooth' })
-    },
-    handleScroll () {
-      const backTop = document.querySelector('.back-top')
-      if (window.pageYOffset > 50) {
-        backTop.classList.add('active')
-      } else {
-        backTop.classList.remove('active')
+  export default {
+    name: 'back-top',
+    data () {
+      return {
+        isActive: false
       }
+    },
+    methods: {
+      backTop () {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      },
+      handleScroll () {
+        const backTop = document.querySelector('.back-top')
+        if (window.pageYOffset > 30) {
+          backTop.classList.add('active')
+        } else {
+          backTop.classList.remove('active')
+        }
+      }
+    },
+    mounted () {
+      window.addEventListener('scroll', this.handleScroll)
     }
-  },
-  mounted () {
-    window.addEventListener('scroll', this.handleScroll)
   }
-}
 </script>
 
 <style scoped>
-.back-top.active {
-  display: block;
-}
-svg {
-  width: 60px;
-  height: 60px;
-}
+  .back-top.active {
+    display: block;
+  }
+  svg {
+    width: 60px;
+    height: 60px;
+  }
 </style>

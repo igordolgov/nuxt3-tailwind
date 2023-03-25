@@ -4,5 +4,4 @@
   2. Tailwind Css - 3
   3. Markdown-it
   4. Pinia
-  5. Pug
-  6. Some markdown-it extensions
+  5. Some markdown-it extensions
