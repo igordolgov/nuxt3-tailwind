@@ -1,7 +1,7 @@
 <template lang="pug">
 .back-top.hidden.fixed.bottom-20.right-10.right-10.z-2.cursor-pointer(@click='backTop')
   svg(viewBox='0 0 55 55', fill='black', xmlns='http://www.w3.org/2000/svg')
-    circle(cx='27.5', cy='27.5', r='24', fill='none', stroke='black')
+    circle(cx='27.5', cy='27.5', r='24', fill='white', fill-opacity=".2", stroke='black')
     path(
       fill-rule='evenodd',
       clip-rule='evenodd',
@@ -9,6 +9,7 @@
       fill='black'
     )
 </template>
+
 
 <script>
 export default {
