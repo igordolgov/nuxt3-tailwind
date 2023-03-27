@@ -1,6 +1,10 @@
 {
 	"extends": "./.nuxt/tsconfig.json",
+  // "compilerOptions": {
+  //   "types": ["node"]
+  // },
 	"vueCompilerOptions": {
+    // "types": ["node"],
 		"plugins": ["@volar/vue-language-plugin-pug"]
 	}
 }

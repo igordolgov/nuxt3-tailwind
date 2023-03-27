@@ -2,4 +2,5 @@
 TheNavbar
 NuxtPage
 TheFooter
+ScrollToTop
 </template>
