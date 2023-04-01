@@ -1,5 +1,5 @@
 <template lang="pug">
-TheNavbar
+TheNavbar.z-50
 NuxtPage
 TheFooter
 ScrollToTop

@@ -2,5 +2,16 @@
 .news-page
   .container.mx-auto.px-4
     h1 Страница новостей
-    p ldkfjvg lkfdglkdsfjgkl jfdglkjfdskl jfdlgkj sdlfkgjb lsdkfjg sdlfkjg dlkfjg lsdkfjg lksdfjg lksdlgk jsdlfjg lsdkfj glsdfkj glksjdrglk jsdflkjg lsdfkjg lksdfjglkjsdfgklj sdlfkj glksdjfglksdjgldkfjvg lkfdglkdsfjgkl jfdglkjfdskl jfdlgkj sdlfkgjb lsdkfjg sdlfkjg dlkfjg lsdkfjg lksdfjg lksdlgk jsdlfjg lsdkfj glsdfkj glksjdrglk jsdflkjg lsdfkjg lksdfjglkjsdfgklj sdlfkj glksdjfglksdjgldkfjvg lkfdglkdsfjgkl jfdglkjfdskl jfdlgkj sdlfkgjb lsdkfjg sdlfkjg dlkfjg lsdkfjg lksdfjg lksdlgk jsdlfjg lsdkfj glsdfkj glksjdrglk jsdflkjg lsdfkjg lksdfjglkjsdfgklj sdlfkj glksdjfglksdjgldkfjvg lkfdglkdsfjgkl jfdglkjfdskl jfdlgkj sdlfkgjb lsdkfjg sdlfkjg dlkfjg lsdkfjg lksdfjg lksdlgk jsdlfjg lsdkfj glsdfkj glksjdrglk jsdflkjg lsdfkjg lksdfjglkjsdfgklj sdlfkj glksdjfglksdjgldkfjvg lkfdglkdsfjgkl jfdglkjfdskl jfdlgkj sdlfkgjb lsdkfjg sdlfkjg dlkfjg lsdkfjg lksdfjg lksdlgk jsdlfjg lsdkfj glsdfkj glksjdrglk jsdflkjg lsdfkjg lksdfjglkjsdfgklj sdlfkj glksdjfglksdjgldkfjvg lkfdglkdsfjgkl jfdglkjfdskl jfdlgkj sdlfkgjb lsdkfjg sdlfkjg dlkfjg lsdkfjg lksdfjg lksdlgk jsdlfjg lsdkfj glsdfkj glksjdrglk jsdflkjg lsdfkjg lksdfjglkjsdfgklj sdlfkj glksdjfglksdjgldkfjvg lkfdglkdsfjgkl jfdglkjfdskl jfdlgkj sdlfkgjb lsdkfjg sdlfkjg dlkfjg lsdkfjg lksdfjg lksdlgk jsdlfjg lsdkfj glsdfkj glksjdrglk jsdflkjg lsdfkjg lksdfjglkjsdfgklj sdlfkj glksdjfglksdjgksdlgk jsdlfjg lsdkfj glsdfkj glksjdrglk jsdflkjg lsdfkjg lksdfjglkjsdfgklj sdlfkj glksdjfglksdjgldkfjvg lkfdglkdsfjgkl jfdglkjfdskl jfdlgkj sdlfkgjb lsdkfjg sdlfkjg dlkfjg lsdkfjg lksdfjg lksdlgk jsdlfjg lsdkfj glsdfkj glksjdrglk jsdflkjg lsdfkjg lksdfjglkjsdfgklj sdlfkj glksdjfglksdjgldkfjvg lkfdglkdsfjgkl jfdglkjfdskl jfdlgkj sdlfkgjb lsdkfjg sdlfkjg dlkfjg lsdkfjg lksdfjg lksdlgk jsdlfjg lsdkfj glsdfkj glksjdrglk jsdflkjg lsdfkjg lksdfjglkjsdfgklj sdlfkj glksdjfglksdjgldkfjvg lkfdglkdsfjgkl jfdglkjfdskl jfdlgkj sdlfkgjb lsdkfjg sdlfkjg dlkfjg lsdkfjg lksdfjg lksdlgk jsdlfjg lsdkfj glsdfkj glksjdrglk jsdflkjg lsdfkjg lksdfjglkjsdfgklj sdlfkj glksdjfglksdjgldkfjvg lkfdglkdsfjgkl jfdglkjfdskl jfdlgkj sdlfkgjb lsdkfjg sdlfkjg dlkfjg lsdkfjg lksdfjg lksdlgk jsdlfjg lsdkfj glsdfkj glksjdrglk jsdflkjg lsdfkjg lksdfjglkjsdfgklj sdlfkj glksdjfglksdjgldkfjvg lkfdglkdsfjgkl jfdglkjfdskl jfdlgkj sdlfkgjb lsdkfjg sdlfkjg dlkfjg lsdkfjg lksdfjg lksdlgk jsdlfjg lsdkfj glsdfkj glksjdrglk jsdflkjg lsdfkjg lksdfjglkjsdfgklj sdlfkj glksdjfglksdjgldkfjvg lkfdglkdsfjgkl jfdglkjfdskl jfdlgkj sdlfkgjb lsdkfjg sdlfkjg dlkfjg lsdkfjg lksdfjg lksdlgk jsdlfjg lsdkfj glsdfkj glksjdrglk jsdflkjg lsdfkjg lksdfjglkjsdfgklj sdlfkj glksdjfglksdjg
+    Nuxt-link.p-4.rounded-xl.shadow-lg.shadow-gray-500(
+      v-for="item in store.motors",
+      :key="item.id"
+      to="/NewsPage"
+)
 </template>
+
+<script setup>
+// импортируем (подключаем) хранилище
+import { useCardTexts } from '~~/stores/products'
+// сохраняем в переменную данные из хранилища
+const store = useCardTexts()
+</script>

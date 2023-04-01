@@ -11,7 +11,6 @@ export const useCardTexts = defineStore('cardTexts', {
 				description: 'Продается всё, что на фото; без упаковки',
 				price: 4000,
 				quantity: 0,
-				image: '/img/engines/engine1-01.jpg',
 				images: [
 					{ src: '/img/engines/engine1-01.jpg' },
 					{ src: '/img/engines/engine1-02.jpg' },
@@ -29,7 +28,6 @@ export const useCardTexts = defineStore('cardTexts', {
 				description: 'Продается всё, что на фото; без упаковки',
 				price: 6500,
 				quantity: 1,
-				image: '/img/engines/engine2-01.jpg',
 				images: [
 					{ src: '/img/engines/engine2-01.jpg' },
 					{ src: '/img/engines/engine2-02.jpg' },
@@ -56,7 +54,7 @@ export const useCardTexts = defineStore('cardTexts', {
 					{ src: '/img/engines/engine3-07.jpg' },
 					{ src: '/img/engines/engine3-08.jpg' },
 					{ src: '/img/engines/engine3-09.jpg' },
-					{ src0: '/img/engines/engine3-10.jpg' },
+					{ src: '/img/engines/engine3-10.jpg' },
 				],
 			},
 		],
@@ -169,8 +167,14 @@ export const useCardTexts = defineStore('cardTexts', {
 					{ src: '/img/starters/starter4-02.jpg' },
 					{ src: '/img/starters/starter4-03.jpg' },
 					{ src: '/img/starters/starter4-04.jpg' },
-				]
-			}
-		]
-	})
+				],
+			},
+		],
+	}),
+
+	// getters: {
+	// 	getCardText(state) {
+	// 		return state.cardTexts;
+	// 	},
+	// },
 })
