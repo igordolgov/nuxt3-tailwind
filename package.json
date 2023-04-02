@@ -14,11 +14,11 @@
     "@tailwindcss/typography": "0.5.8",
     "autoprefixer": "^10.4.14",
     "fibers": "^5.0.3",
-    "node-sass": "^8.0.0",
     "nuxt": "^3.3.2",
     "nuxt-icon": "^0.3.3",
     "postcss": "^8.4.21",
-    "sass-loader": "^10.4.1",
+    "sass": "^1.60.0",
+    "sass-loader": "^13.2.2",
     "tailwindcss": "^3.3.1"
   },
   "dependencies": {
@@ -35,6 +35,7 @@
     "markdown-it-sup": "1.0.0",
     "nuxt-swiper": "^1.0.1",
     "nuxt-vite": "^0.3.5",
+    "swiper": "^9.2.0",
     "vite-plugin-pug": "^0.3.2"
   }
 }

@@ -7,11 +7,6 @@ export default defineNuxtConfig({
       'nuxt-icon',
       'nuxt-swiper'
     ],
-    swiper: {
-      prefix: 'Swiper',
-      styleLang: 'css',
-      modules: ['navigation', 'pagination', 'Autoplay', 'EffectCreative', 'Keyboard']
-    },
     devtools: {
       // Enable devtools (default: true)
       enabled: true,

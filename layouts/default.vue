@@ -1,6 +1,6 @@
 <template lang="pug">
-TheNavbar.z-50
+TheHeader.z-50
 NuxtPage
-TheFooter
+    ProductsPage
 ScrollToTop
 </template>
